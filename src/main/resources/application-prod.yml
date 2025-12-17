@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: google_shop
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shop_db
+    username: shop_user
+    password: shop_pass
+    driver-class-name: org.postgresql.Driver
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+    enabled: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+
+  banner:
+    location: banner/banner-prod.txt
+
+
+springdoc:
+  swagger-ui:
+    path: /docs
+    enabled: false
+  api-docs:
+    path: /v3/api-docs
+    enabled: false
