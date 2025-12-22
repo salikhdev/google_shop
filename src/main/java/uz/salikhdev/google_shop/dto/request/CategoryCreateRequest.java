@@ -9,7 +9,6 @@ public record CategoryCreateRequest(
         @NotBlank
         @JsonProperty("name")
         String name,
-        @NotBlank
         @JsonProperty("image_url")
         String imageUrl
 ) {

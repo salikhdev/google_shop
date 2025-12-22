@@ -36,6 +36,12 @@ dependencies {
     // Redis Client
     implementation("redis.clients:jedis:5.2.0")
 
+    // image cutter
+    implementation("net.coobird:thumbnailator:0.4.20")
+
+    // Minio
+    implementation("io.minio:minio:8.6.0")
+
     // OpenAPI
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0")
 

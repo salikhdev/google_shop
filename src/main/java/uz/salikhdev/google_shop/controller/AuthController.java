@@ -40,6 +40,4 @@ public class AuthController {
         String code = authService.registration(request);
         return ResponseEntity.ok(SuccessResponse.ok("User registered successfully: " + code));
     }
-
-
 }

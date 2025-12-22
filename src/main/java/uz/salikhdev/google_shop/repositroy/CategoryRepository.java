@@ -7,5 +7,6 @@ import uz.salikhdev.google_shop.entity.product.Category;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
+    boolean existsByName(String name);
 
 }

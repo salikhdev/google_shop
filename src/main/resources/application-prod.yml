@@ -38,3 +38,9 @@ springdoc:
   api-docs:
     path: /v3/api-docs
     enabled: false
+
+minio:
+  url: http://localhost:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: google-shop-bucket

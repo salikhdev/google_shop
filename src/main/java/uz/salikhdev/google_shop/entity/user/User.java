@@ -56,6 +56,9 @@ public class User implements UserDetails {
     @Column(name = "password", nullable = false)
     private String password;
 
+    @Column(name = "avatar_url")
+    public String avatarUrl;
+
     @Column(name = "is_active", nullable = false)
     private Boolean is_active;
 

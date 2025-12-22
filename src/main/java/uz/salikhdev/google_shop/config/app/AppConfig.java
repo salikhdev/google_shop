@@ -22,6 +22,7 @@ public class AppConfig {
 
     private final UserRepository repository;
 
+
     @Bean
     public RedisTemplate<String, Long> redisTemplate(RedisConnectionFactory factory) {
         RedisTemplate<String, Long> template = new RedisTemplate<>();

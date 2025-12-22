@@ -6,10 +6,14 @@ import uz.salikhdev.google_shop.dto.request.CategoryCreateRequest;
 import uz.salikhdev.google_shop.dto.response.CategoryResponse;
 import uz.salikhdev.google_shop.entity.product.Category;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring")
 public interface CategoryMapper {
 
     CategoryResponse toResponse(Category category);
+
+    List<CategoryResponse> toResponse(List<Category> categories);
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
