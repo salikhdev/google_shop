@@ -20,6 +20,8 @@ public record ProductResponse(
         @JsonProperty("price")
         BigDecimal price,
         @JsonProperty("image_url")
-        String imageUrl
+        String imageUrl,
+        @JsonProperty("quantity")
+        Long quantity
 ) {
 }

@@ -53,6 +53,8 @@ public class ProductService {
             return productMapper.toResponse(products);
         }
 
+        // TODO : filter qo'shish.
+
         List<Product> products = productRepository.findAll();
         return productMapper.toResponse(products);
     }
